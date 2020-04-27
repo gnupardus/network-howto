@@ -1,4 +1,4 @@
-1. Export the GPG key
+## Export the GPG key
 
 gpg --list-keys
 
@@ -13,7 +13,7 @@ ssh user@remotehost ile bağlantıyı sağladıktan sonra
 
 scp mygpgkey_pub.gpg mygpgkey_sec.gpg user@remotehost:~/ ile kopyalama işlemini gerçekleştirelim.
 
-Sonra import edelim :
+## Sonra import edelim :
 
 gpg --import ~/mygpgkey_pub.gpg
 gpg --allow-secret-key-import --import ~/mygpgkey_sec.gpg
